@@ -1,0 +1,51 @@
+*{
+
+
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
+body{
+
+
+height: 100%;
+width: 100%;
+
+
+}
+
+
+.myDiv{
+
+height: 100vh;
+width: 100%;
+
+
+
+
+}
+
+.myBtn{
+padding: 10px 20px;
+font-size: 20px;
+border-radius: 10px;
+background-color: blue;
+color: white;
+border: none;
+cursor: pointer;
+position: absolute;
+left: 1200px;
+margin: 15px;
+}
+
+
+
+.myBtn:hover{
+
+background-color: aqua;
+color: black;
+}
