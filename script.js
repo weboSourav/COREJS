@@ -40,13 +40,65 @@ function createMainDiv(){
 
 div.classList.add("myDiv");
 document.body.appendChild(div);
-document.body.style.textAlign = "center";
+//document.body.style.textAlign = "center";
 div.style.transition =  "background-color 0.7s, color 0.10s";
+
+const h1 = document.createElement("h1");
+h1.classList.add("h1");
+div.appendChild(h1);
+h1.innerHTML = "HELLO THERE <br>SOURAV SHARMA HERE"
+h1.style.transition = "transform 0.6s"
+h1.style.transformStyle = "preserve-3d";
+
+h1.addEventListener("click",()=> {
+const originalText = h1.innerHTML;
+h1.style.transform = "rotateX(160deg)";
+setTimeout(()=>{
+
+h1.innerHTML = "A FRONTEND DEVELOPER"
+},300)
+
+
+setTimeout(()=>{
+
+h1.style.transform = "rotateX(0deg)" 
+h1.innerHTML = originalText;
+
+},5000 )
+
+
+
+
+
+
+}
+)
+
+
+
+
+
+
+
+
+
+
+
+
+var image = document.createElement("img");
+image.classList.add("Myimg");
+image.src= "src/hero-img.png";
+image.alt="wooww its not loading";
+div.appendChild(image);
+
+
+
 
 
 var p = document.createElement("p");
 p.classList.add("myP");
 div.appendChild(p);
+p.innerHTML="provide the work "
 
 
 
@@ -100,14 +152,16 @@ if(parentDiv.style.backgroundColor == "black"){
     parentDiv.style.color = "black";
     nav.style.backgroundColor ="white"
     ul.style.color = "black";
-    btn.style.color = "black";
+    btn.style.color = "white";
+    btn.style.backgroundColor ="black"
 }else{
 parentDiv.style.backgroundColor = "black";
 parentDiv.style.color = "white";
 nav.style.backgroundColor = "black";
 //div.innerText = "SEE THE REAL PROGRESS THROUGH THE DARKNESS";
 ul.style.color = "white";
-btn.style.color = "white";
+btn.style.color = "black";
+btn.style.backgroundColor = "white"
 
 
     }
